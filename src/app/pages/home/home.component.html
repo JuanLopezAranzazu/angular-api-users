@@ -1,0 +1,16 @@
+<div class="home-container">
+  <h2>{{ title }}</h2>
+
+  <div *ngIf="user; else loading">
+    <p><strong>Nombre:</strong> {{ user.name }}</p>
+    <p><strong>Usuario:</strong> {{ user.username }}</p>
+
+    <button (click)="logout()">Cerrar sesión</button>
+  </div>
+
+  <ng-template #loading>
+    <p>Cargando datos del usuario...</p>
+  </ng-template>
+
+  <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+</div>
