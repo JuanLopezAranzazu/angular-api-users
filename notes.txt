@@ -1,0 +1,25 @@
+Angular
+
+Instalar angular cli
+npm install -g @angular/cli
+
+Crear nuevo proyecto
+ng new <project-name>
+
+Ejecutar
+npm start
+
+Ejecutar en producción
+ng serve -c production
+
+URL Local
+http://localhost:4200
+
+crear paginas y componentes
+ng generate component pages/nombre-pagina --standalone --skip-tests
+
+crear servicios
+ng generate service services/nombre-servicio --skip-tests
+
+crear ambientes
+ng generate environments
